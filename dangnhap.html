@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/logo.jpg">
+        <title>Đăng Nhập</title>
+
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-table.min.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/style1.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap-table.min.js"></script>    
+        <script src="js/bootstrap-table-mobile.js"></script>
+        <script src="js/script.js"></script>
+
+        <!--Font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+    </head>
+    <body>
+        <!--Header-->
+        <header class="header-tin-tuc">
+            <!--Nav-->
+            <nav class="navbar navbar-expand-sm container-nav">
+                <a href="trangchu.html"><img src="images/logo.gif" id="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-header" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Hoa Tươi
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-light hoa-tuoi-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Hoa Sinh Nhật</a></li>
+                                            <li><a class="dropdown-item" href="#">Hoa Chúc Mừng</a></li>
+                                            <li><a class="dropdown-item" href="#">Hoa Chia Buồn</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin Tức</a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <div class="container-search">
+                    <input type="search" id="search" placeholder="Search">
+                    <i class="fa fa-search icon-search"></i>
+                </div>
+                <div class="container-card">
+                    <i class="fa fa-shopping-cart icon-card"></i>
+                </div>
+                <div class="collapse navbar-collapse container-user" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user icon-user"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="layout.html">Đăng Nhập</a></li>
+                                <li><a class="dropdown-item" href="dangky.html">Đăng Ký</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Slide-->
+            <div class="container-slide">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/dau-trang1.jfif" class="rounded d-block border boder-light img" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/dau-trang2.jfif" class="rounded d-block border boder-light img" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/dau-trang3.jpg" class="rounded d-block border boder-light img" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!--Main-->
+        <main>
+            <script language="javascript" src="js/kiemtra-dn.js"></script>
+            <form method="post" onsubmit="return registerValidate(this)" enctype="application/x-www-form-urlencoded" action="trangchu.html">
+                <h1 class="lab">LOGIN</h1>
+                <div  class="register" >
+                            <i class="fa fa-envelope icon-white"></i>
+                            <label for="username"><b>Username</b></label>
+                            <input class="input-field" type="text" placeholder="abc@gmail.com" name="email"><br>
+                            <i class="fa fa-key icon-white"></i>
+                            <label for="password"><b>Password</b></label>
+                            <input class="input-field" type="password" placeholder="*********" name="psw"><br>
+                          
+                            
+            
+            <button type="submit" class="submit">Submit</button>
+            </div>
+            <div class="register login">
+            <p> Do you have an account? <a href="dangki.html">Sign up</a>.</p>
+            </div>
+            </form>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container part1">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li><h3>Chính sách</h3></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Chính sách vận chuyển</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                        </ul>
+                    </div>
+                    <div class="col contact">
+                        <ul>
+                            <li><h3>Kết nối với chúng tôi</h3></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i>Kết nối qua Facebook</a></li>
+                            <li><a href="#"><i class="far fa-envelope"></i>Kết nối qua Gmail</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i>Kết nối qua Youtube</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Kết nối qua Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col3">
+                        <ul>
+                            <li><h3>Công ty tnhh SunFlower</h3></li>
+                            <li><i class="fas fa-phone-alt"></i>0957425579</li>
+                            <li><i class="fas fa-shipping-fast"></i>Giao hoa hỏa tốc đến 63 tỉnh thành</li>
+                            <li><i class="fas fa-clock"></i>7h - 20h (T2 - CN)</li>
+                            <li><i class="fas fa-map-marker-alt"></i>3/2, P.Xuân Khánh, Q.Ninh Kiều, TPCT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part2">
+                <div><i class="fas fa-globe fa-2x"></i>Vietnam</div>
+                <div><p>&copy;2021 Bản quyền thuộc về SunFlower Việt Nam.</p></div>
+            </div>
+            <a href="#top" class="back-top"><img src="images/arrow-top.gif"></a>
+        </footer>
+    </body>
+</html>
